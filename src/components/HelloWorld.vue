@@ -1,19 +1,23 @@
 <script setup>
-import { ref } from 'vue'
+import { reactive, watch } from 'vue';
 
-const count = ref(0) // สร้างตัวแปร count ด้วย ref และค่าเริ่มต้นเป็น 0
+const state = reactive({
+  count: 0
+});
+
+// ใช้ watch เพื่อติดตามการเปลี่ยนแปลงของ count
+watch(
+  () => state.count,
+  (newCount, oldCount) => {
+    console.log(`count เปลี่ยนจาก ${oldCount} เป็น ${newCount}`);
+  }
+);
 </script>
 
 <template>
   <div>
-    <p>จำนวน: {{ count }}</p>
-    <button @click="count++">add</button> <!-- กดปุ่มเพิ่มค่า -->
+    <p>hiiiiiiiiii</p>
+    <p>จำนวน: {{ state.count }}</p>
+    <button @click="state.count++">เพิ่มจำนวน</button>
   </div>
 </template>
-
-
-<style scoped>
-.read-the-docs {
-  color: #888;
-}
-</style>

@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-# vue-project
-This is my personal project &lt;3
-=======
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
->>>>>>> 497bb56 (Initial commit)
+#day01
+ref -> ไว้ใช้สร้างค่าที่มีการเปลี่ยนแปลงอยู่ตลอด
+reactive -> เหมือน ref แต่พิเศษขึ้นโดยสามารถเก็บค่าเป็น array ได้
+computed -> คำนวณ ซึ่งต่างจาก method โดยจะคำนวณทุกครั้งที่ reactive data เปลี่ยน ไม่ใช่ตามที่รันฟังก์ชัน
+watch -> ใช้ดูค่าที่เปลี่ยน ดูที่ inspect-console
