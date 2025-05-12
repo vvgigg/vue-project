@@ -1,5 +1,8 @@
 <template>
-  <h3>This is homepage</h3>
+  <div>
+    <h1>Homeeeee</h1>
+
+  </div>
 </template>
 
 <script>

@@ -1,13 +1,10 @@
 <template>
-  <h2>login</h2>
+  <div>
+    <h1>Login Page</h1>
+    <p>Role: {{ $route.params.role }}</p>
+  </div>
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+console.log("Login loaded")
 </script>
-
-<style>
-
-</style>
